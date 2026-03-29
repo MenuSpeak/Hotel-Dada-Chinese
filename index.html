@@ -1198,9 +1198,17 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="बिरयानी">🍚 Biryani Special</button>
-<button class="tab" data-cat="स्टार्टर">🍗 Starters</button>
-              </div>  
+<button class="tab" data-cat="NON-VEG CHINESE">🍗 Non-Veg Chinese</button>
+<button class="tab" data-cat="NON-VEG STARTER">🔥 Non-Veg Starters</button>
+<button class="tab" data-cat="VEG CHINESE">🥢 Veg Chinese</button>
+<button class="tab" data-cat="VEG STARTER">🥦 Veg Starters</button>
+<button class="tab" data-cat="MOMOS">🥟 Momos</button>
+<button class="tab" data-cat="SOUP">🥣 Soups</button>
+<button class="tab" data-cat="SPECIAL DISHES">⭐ Khaas Dishes</button>
+<button class="tab" data-cat="BEVERAGES">🥤 Cold Drinks & Water</button>
+<button class="tab" data-cat="ROLLS">🌯 Special Rolls</button>
+     
+    </div>  
                 </div>
             </div>
 
@@ -1345,9 +1353,90 @@
         // Menu Data - FIXED VERSION
         const data = [
 
+  {"id": 1, "cat": "NON-VEG CHINESE", "name": "Chicken Rice (Half) | चिकन राईस (हाफ)", "price": "70/-", "desc": "Stir-fried chicken and rice with Chinese sauces - Half Portion", "tags": ["Non-Veg", "Chinese", "Rice", "Half"], "img": "img/chicken_rice_half.jpeg"},
+  {"id": 2, "cat": "NON-VEG CHINESE", "name": "Chicken Rice (Full) | चिकन राईस (फुल)", "price": "130/-", "desc": "Stir-fried chicken and rice with Chinese sauces - Full Portion", "tags": ["Non-Veg", "Chinese", "Rice", "Full"], "img": "img/chicken_rice_full.jpeg"},
+  {"id": 3, "cat": "NON-VEG CHINESE", "name": "Chicken Noodles (Half) | चिकन नुडल्स (हाफ)", "price": "70/-", "desc": "Stir-fried noodles with chicken pieces - Half Portion", "tags": ["Non-Veg", "Chinese", "Noodles", "Half"], "img": "img/chicken_noodles_half.jpeg"},
+  {"id": 4, "cat": "NON-VEG CHINESE", "name": "Chicken Noodles (Full) | चिकन नुडल्स (फुल)", "price": "130/-", "desc": "Stir-fried noodles with chicken pieces - Full Portion", "tags": ["Non-Veg", "Chinese", "Noodles", "Full"], "img": "img/chicken_noodles_full.jpeg"},
+  {"id": 5, "cat": "NON-VEG STARTER", "name": "Chicken Lollipop (Half) | चिकन लॉलीपॉप (हाफ)", "price": "90/-", "desc": "Crispy deep-fried chicken wings - Half Portion", "tags": ["Non-Veg", "Starter", "Half"], "img": "img/chicken_lollipop_half.jpeg"},
+  {"id": 6, "cat": "NON-VEG STARTER", "name": "Chicken Lollipop (Full) | चिकन लॉलीपॉप (फुल)", "price": "170/-", "desc": "Crispy deep-fried chicken wings - Full Portion", "tags": ["Non-Veg", "Starter", "Full"], "img": "img/chicken_lollipop_full.jpeg"},
+  {"id": 7, "cat": "NON-VEG STARTER", "name": "Chicken Chilli (Half) | चिकन चिल्ली (हाफ)", "price": "100/-", "desc": "Crispy chicken tossed in spicy soy-garlic sauce - Half Portion", "tags": ["Non-Veg", "Starter", "Half"], "img": "img/chicken_chilli_half.jpeg"},
+  {"id": 8, "cat": "NON-VEG STARTER", "name": "Chicken Chilli (Full) | चिकन चिल्ली (फुल)", "price": "170/-", "desc": "Crispy chicken tossed in spicy soy-garlic sauce - Full Portion", "tags": ["Non-Veg", "Starter", "Full"], "img": "img/chicken_chilli_full.jpeg"},
+  {"id": 9, "cat": "NON-VEG CHINESE", "name": "Chicken Triple Rice (Half) | चिकन ट्रिपल राईस (हाफ)", "price": "120/-", "desc": "Combination of chicken rice, noodles, and Manchurian gravy - Half Portion", "tags": ["Non-Veg", "Chinese", "Special", "Half"], "img": "img/chicken_triple_rice_half.jpeg"},
+  {"id": 10, "cat": "NON-VEG CHINESE", "name": "Chicken Triple Rice (Full) | चिकन ट्रिपल राईस (फुल)", "price": "180/-", "desc": "Combination of chicken rice, noodles, and Manchurian gravy - Full Portion", "tags": ["Non-Veg", "Chinese", "Special", "Full"], "img": "img/chicken_triple_rice_full.jpeg"},
+  {"id": 11, "cat": "NON-VEG CHINESE", "name": "Anda Rice (Half) | अंडा राईस (हाफ)", "price": "70/-", "desc": "Fried rice cooked with scrambled eggs - Half Portion", "tags": ["Non-Veg", "Chinese", "Egg", "Half"], "img": "img/anda_rice_half.jpeg"},
+  {"id": 12, "cat": "NON-VEG CHINESE", "name": "Anda Rice (Full) | अंडा राईस (फुल)", "price": "120/-", "desc": "Fried rice cooked with scrambled eggs - Full Portion", "tags": ["Non-Veg", "Chinese", "Egg", "Full"], "img": "img/anda_rice_full.jpeg"},
+  {"id": 13, "cat": "NON-VEG CHINESE", "name": "Chicken Combo (Half) | चिकन कॉम्बो (हाफ)", "price": "70/-", "desc": "Special chicken Chinese combo - Half Portion", "tags": ["Non-Veg", "Chinese", "Combo", "Half"], "img": "img/chicken_combo_half.jpeg"},
+  {"id": 14, "cat": "NON-VEG CHINESE", "name": "Chicken Combo (Full) | चिकन कॉम्बो (फुल)", "price": "120/-", "desc": "Special chicken Chinese combo - Full Portion", "tags": ["Non-Veg", "Chinese", "Combo", "Full"], "img": "img/chicken_combo_full.jpeg"},
+  {"id": 15, "cat": "NON-VEG CHINESE", "name": "Chicken Triple Noodles (Half) | चिकन ट्रिपल नुडल्स (हाफ)", "price": "120/-", "desc": "Noodles and rice mix with chicken gravy - Half Portion", "tags": ["Non-Veg", "Chinese", "Special", "Half"], "img": "img/chicken_triple_noodles_half.jpeg"},
+  {"id": 16, "cat": "NON-VEG CHINESE", "name": "Chicken Triple Noodles (Full) | चिकन ट्रिपल नुडल्स (फुल)", "price": "180/-", "desc": "Noodles and rice mix with chicken gravy - Full Portion", "tags": ["Non-Veg", "Chinese", "Special", "Full"], "img": "img/chicken_triple_noodles_full.jpeg"},
+  {"id": 17, "cat": "NON-VEG CHINESE", "name": "Anda Noodles (Half) | अंडा नुडल्स (हाफ)", "price": "70/-", "desc": "Stir-fried noodles with eggs - Half Portion", "tags": ["Non-Veg", "Chinese", "Egg", "Half"], "img": "img/anda_noodles_half.jpeg"},
+  {"id": 18, "cat": "NON-VEG CHINESE", "name": "Anda Noodles (Full) | अंडा नुडल्स (फुल)", "price": "120/-", "desc": "Stir-fried noodles with eggs - Full Portion", "tags": ["Non-Veg", "Chinese", "Egg", "Full"], "img": "img/anda_noodles_full.jpeg"},
+  
+  {"id": 19, "cat": "VEG CHINESE", "name": "Veg Rice (Half) | व्हेज राईस (हाफ)", "price": "70/-", "desc": "Classic vegetable fried rice - Half Portion", "tags": ["Veg", "Chinese", "Rice", "Half"], "img": "img/veg_rice_half.jpeg"},
+  {"id": 20, "cat": "VEG CHINESE", "name": "Veg Rice (Full) | व्हेज राईस (फुल)", "price": "120/-", "desc": "Classic vegetable fried rice - Full Portion", "tags": ["Veg", "Chinese", "Rice", "Full"], "img": "img/veg_rice_full.jpeg"},
+  {"id": 21, "cat": "VEG CHINESE", "name": "Veg Noodles (Half) | व्हेज नुडल्स (हाफ)", "price": "70/-", "desc": "Stir-fried veg hakka noodles - Half Portion", "tags": ["Veg", "Chinese", "Noodles", "Half"], "img": "img/veg_noodles_half.jpeg"},
+  {"id": 22, "cat": "VEG CHINESE", "name": "Veg Noodles (Full) | व्हेज नुडल्स (फुल)", "price": "120/-", "desc": "Stir-fried veg hakka noodles - Full Portion", "tags": ["Veg", "Chinese", "Noodles", "Full"], "img": "img/veg_noodles_full.jpeg"},
+  {"id": 23, "cat": "VEG STARTER", "name": "Manchurian Chilli (Half) | मंचुरियन चिल्ली (हाफ)", "price": "100/-", "desc": "Veg manchurian balls tossed in spicy chilli sauce - Half Portion", "tags": ["Veg", "Starter", "Half"], "img": "img/manchurian_chilli_half.jpeg"},
+  {"id": 24, "cat": "VEG STARTER", "name": "Manchurian Chilli (Full) | मंचुरियन चिल्ली (फुल)", "price": "130/-", "desc": "Veg manchurian balls tossed in spicy chilli sauce - Full Portion", "tags": ["Veg", "Starter", "Full"], "img": "img/manchurian_chilli_full.jpeg"},
+  {"id": 25, "cat": "VEG STARTER", "name": "Soyabean Chilli (Half) | सोयाबीन चिल्ली (हाफ)", "price": "100/-", "desc": "Crispy soya chunks in spicy sauce - Half Portion", "tags": ["Veg", "Starter", "Half"], "img": "img/soyabean_chilli_half.jpeg"},
+  {"id": 26, "cat": "VEG STARTER", "name": "Soyabean Chilli (Full) | सोयाबीन चिल्ली (फुल)", "price": "130/-", "desc": "Crispy soya chunks in spicy sauce - Full Portion", "tags": ["Veg", "Starter", "Full"], "img": "img/soyabean_chilli_full.jpeg"},
+  {"id": 27, "cat": "VEG STARTER", "name": "Paneer Chilli | पनीर चिल्ली", "price": "150/-", "desc": "Crispy paneer cubes in tangy Chinese sauce", "tags": ["Veg", "Starter", "Paneer"], "img": "img/paneer_chilli.jpeg"},
+  {"id": 28, "cat": "VEG CHINESE", "name": "Paneer Rice (Half) | पनीर राईस (हाफ)", "price": "80/-", "desc": "Fried rice with paneer cubes - Half Portion", "tags": ["Veg", "Chinese", "Paneer", "Half"], "img": "img/paneer_rice_half.jpeg"},
+  {"id": 29, "cat": "VEG CHINESE", "name": "Paneer Rice (Full) | पनीर राईस (फुल)", "price": "120/-", "desc": "Fried rice with paneer cubes - Full Portion", "tags": ["Veg", "Chinese", "Paneer", "Full"], "img": "img/paneer_rice_full.jpeg"},
+  {"id": 30, "cat": "VEG CHINESE", "name": "Paneer Noodles (Half) | पनीर नुडल्स (हाफ)", "price": "80/-", "desc": "Noodles stir-fried with paneer - Half Portion", "tags": ["Veg", "Chinese", "Paneer", "Half"], "img": "img/paneer_noodles_half.jpeg"},
+  {"id": 31, "cat": "VEG CHINESE", "name": "Paneer Noodles (Full) | पनीर नुडल्स (फुल)", "price": "120/-", "desc": "Noodles stir-fried with paneer - Full Portion", "tags": ["Veg", "Chinese", "Paneer", "Full"], "img": "img/paneer_noodles_full.jpeg"},
+  {"id": 32, "cat": "VEG CHINESE", "name": "Veg Triple Rice (Half) | व्हेज ट्रिपल राईस (हाफ)", "price": "100/-", "desc": "Mix of veg rice, noodles, and manchurian gravy - Half Portion", "tags": ["Veg", "Chinese", "Special", "Half"], "img": "img/veg_triple_rice_half.jpeg"},
+  {"id": 33, "cat": "VEG CHINESE", "name": "Veg Triple Rice (Full) | व्हेज ट्रिपल राईस (फुल)", "price": "150/-", "desc": "Mix of veg rice, noodles, and manchurian gravy - Full Portion", "tags": ["Veg", "Chinese", "Special", "Full"], "img": "img/veg_triple_rice_full.jpeg"},
+  {"id": 34, "cat": "VEG CHINESE", "name": "Veg Combo (Half) | व्हेज कॉम्बो (हाफ)", "price": "70/-", "desc": "Special veg Chinese combo - Half Portion", "tags": ["Veg", "Chinese", "Combo", "Half"], "img": "img/veg_combo_half.jpeg"},
+  {"id": 35, "cat": "VEG CHINESE", "name": "Veg Combo (Full) | व्हेज कॉम्बो (फुल)", "price": "120/-", "desc": "Special veg Chinese combo - Full Portion", "tags": ["Veg", "Chinese", "Combo", "Full"], "img": "img/veg_combo_full.jpeg"},
+  {"id": 36, "cat": "VEG STARTER", "name": "Finger Chips (Half) | फिंगर चिप्स (हाफ)", "price": "80/-", "desc": "Classic crispy french fries - Half Portion", "tags": ["Veg", "Starter", "Snacks", "Half"], "img": "img/finger_chips_half.jpeg"},
+  {"id": 37, "cat": "VEG STARTER", "name": "Finger Chips (Full) | फिंगर चिप्स (फुल)", "price": "120/-", "desc": "Classic crispy french fries - Full Portion", "tags": ["Veg", "Starter", "Snacks", "Full"], "img": "img/finger_chips_full.jpeg"},
+
+  {"id": 38, "cat": "MOMOS", "name": "Chicken Momos (6 pcs) | चिकन मोमोज (हाफ)", "price": "60/-", "desc": "Steamed chicken dumplings - 6 Pieces", "tags": ["Non-Veg", "Momos", "Half"], "img": "img/chicken_momos_half.jpeg"},
+  {"id": 39, "cat": "MOMOS", "name": "Chicken Momos (12 pcs) | चिकन मोमोज (फुल)", "price": "100/-", "desc": "Steamed chicken dumplings - 12 Pieces", "tags": ["Non-Veg", "Momos", "Full"], "img": "img/chicken_momos_full.jpeg"},
+  {"id": 40, "cat": "MOMOS", "name": "Chilli Momos (6 pcs) | चिल्ली मोमोज (हाफ)", "price": "80/-", "desc": "Spicy tossed momos in chilli sauce - 6 Pieces", "tags": ["Non-Veg", "Momos", "Spicy", "Half"], "img": "img/chilli_momos_half.jpeg"},
+  {"id": 41, "cat": "MOMOS", "name": "Chilli Momos (12 pcs) | चिल्ली मोमोज (फुल)", "price": "150/-", "desc": "Spicy tossed momos in chilli sauce - 12 Pieces", "tags": ["Non-Veg", "Momos", "Spicy", "Full"], "img": "img/chilli_momos_full.jpeg"},
+  {"id": 42, "cat": "MOMOS", "name": "Veg Momos (6 pcs) | व्हेज मोमोज (हाफ)", "price": "60/-", "desc": "Steamed vegetable dumplings - 6 Pieces", "tags": ["Veg", "Momos", "Half"], "img": "img/veg_momos_half.jpeg"},
+  {"id": 43, "cat": "MOMOS", "name": "Veg Momos (12 pcs) | व्हेज मोमोज (फुल)", "price": "100/-", "desc": "Steamed vegetable dumplings - 12 Pieces", "tags": ["Veg", "Momos", "Full"], "img": "img/veg_momos_full.jpeg"},
+  {"id": 59, "cat": "MOMOS", "name": "Honey Chilli Momos (Non-Veg) | हनी चिल्ली मोमोज (नॉन-व्हेज)", "price": "-", "desc": "Chicken momos tossed in sweet and spicy honey chilli sauce", "tags": ["Non-Veg", "Momos", "Spicy"], "img": "img/honey_chilli_momos_non_veg.jpeg"},
+  {"id": 60, "cat": "MOMOS", "name": "Honey Chilli Momos (Veg) | हनी चिल्ली मोमोज (व्हेज)", "price": "-", "desc": "Veg momos tossed in sweet and spicy honey chilli sauce", "tags": ["Veg", "Momos", "Spicy"], "img": "img/honey_chilli_momos_veg.jpeg"},
 
 
-          
+
+
+
+              
+  {"id": 44, "cat": "SOUP", "name": "Chicken Soup (Half) | चिकन सूप (हाफ)", "price": "70/-", "desc": "Warm and comforting chicken soup - Half Portion", "tags": ["Non-Veg", "Soup", "Half"], "img": "img/chicken_soup_half.jpeg"},
+  {"id": 45, "cat": "SOUP", "name": "Chicken Soup (Full) | चिकन सूप (फुल)", "price": "90/-", "desc": "Warm and comforting chicken soup - Full Portion", "tags": ["Non-Veg", "Soup", "Full"], "img": "img/chicken_soup_full.jpeg"},
+  {"id": 46, "cat": "SOUP", "name": "Veg Soup (Half) | व्हेज सूप (हाफ)", "price": "40/-", "desc": "Healthy mixed vegetable soup - Half Portion", "tags": ["Veg", "Soup", "Half"], "img": "img/veg_soup_half.jpeg"},
+  {"id": 47, "cat": "SOUP", "name": "Veg Soup (Full) | व्हेज सूप (फुल)", "price": "70/-", "desc": "Healthy mixed vegetable soup - Full Portion", "tags": ["Veg", "Soup", "Full"], "img": "img/veg_soup_full.jpeg"},
+
+   
+  {"id": 48, "cat": "SPECIAL DISHES", "name": "Chicken Rice with Omelette (Half) | चिकन राईस विथ ऑम्लेट (हाफ)", "price": "90/-", "desc": "Special chicken rice served with an omelette - Half Portion", "tags": ["Non-Veg", "Special", "Chicken", "Egg", "Half"], "img": "img/chicken_rice_omelette_half.jpeg"},
+  {"id": 49, "cat": "SPECIAL DISHES", "name": "Chicken Rice with Omelette (Full) | चिकन राईस विथ ऑम्लेट (फुल)", "price": "150/-", "desc": "Special chicken rice served with an omelette - Full Portion", "tags": ["Non-Veg", "Special", "Chicken", "Egg", "Full"], "img": "img/chicken_rice_omelette_full.jpeg"},
+  {"id": 50, "cat": "SPECIAL DISHES", "name": "Chicken Kadak Fry with Omelette (Half) | चिकन कडक फ्राय विथ ऑम्लेट (हाफ)", "price": "90/-", "desc": "Extra crispy fried chicken served with an omelette - Half Portion", "tags": ["Non-Veg", "Special", "Chicken", "Egg", "Half"], "img": "img/chicken_kadak_fry_omelette_half.jpeg"},
+  {"id": 51, "cat": "SPECIAL DISHES", "name": "Chicken Kadak Fry with Omelette (Full) | चिकन कडक फ्राय विथ ऑम्लेट (फुल)", "price": "140/-", "desc": "Extra crispy fried chicken served with an omelette - Full Portion", "tags": ["Non-Veg", "Special", "Chicken", "Egg", "Full"], "img": "img/chicken_kadak_fry_omelette_full.jpeg"},           
+
+
+  {"id": 52, "cat": "BEVERAGES", "name": "Water Bottle | पाणी बॉटल", "price": "MRP", "desc": "Packaged drinking water", "tags": ["Veg", "Beverages"], "img": "img/water_bottle.jpeg"},
+  {"id": 53, "cat": "BEVERAGES", "name": "Energy Drink | एनर्जी ड्रींक", "price": "MRP", "desc": "Refreshing energy drink", "tags": ["Veg", "Beverages"], "img": "img/energy_drink.jpeg"},
+  {"id": 54, "cat": "BEVERAGES", "name": "Cold Drink | कोल्ड्रींक", "price": "MRP", "desc": "Chilled soft drinks", "tags": ["Veg", "Beverages"], "img": "img/cold_drink.jpeg"},
+  
+  {"id": 55, "cat": "ROLLS", "name": "Paneer Roll (Veg) | पनीर रोल (व्हेज)", "price": "-", "desc": "Delicious veg roll stuffed with paneer and spices", "tags": ["Veg", "Rolls", "Paneer"], "img": "img/paneer_roll.jpeg"},
+  {"id": 56, "cat": "ROLLS", "name": "Chicken Roll (Non-Veg) | चिकन रोल (नॉन-व्हेज)", "price": "-", "desc": "Spicy non-veg roll stuffed with juicy chicken", "tags": ["Non-Veg", "Rolls", "Chicken"], "img": "img/chicken_roll.jpeg"},
+  
+  {"id": 57, "cat": "STARTER", "name": "Honey Chilli Potato (Veg) | हनी चिल्ली पोटॅटो (व्हेज)", "price": "-", "desc": "Crispy potato fries tossed in sweet and spicy honey chilli sauce", "tags": ["Veg", "Starter", "Chinese"], "img": "img/honey_chilli_potato.jpeg"},
+  {"id": 58, "cat": "STARTER", "name": "Honey Chilli Lollipop (Non-Veg) | हनी चिल्ली लॉलीपॉप (नॉन-व्हेज)", "price": "-", "desc": "Chicken lollipop tossed in sweet and spicy honey chilli sauce", "tags": ["Non-Veg", "Starter", "Chinese"], "img": "img/honey_chilli_lollipop.jpeg"},
+  
+  
+  {"id": 61, "cat": "RICE", "name": "Veg Triple Rice | व्हेज ट्रिपल राईस", "price": "-", "desc": "Mix of veg rice, noodles, and manchurian gravy", "tags": ["Veg", "Chinese", "Rice", "Special"], "img": "img/veg_triple_rice.jpeg"},
+
+
+              
+              
+
+
+              
           
    ];
         
